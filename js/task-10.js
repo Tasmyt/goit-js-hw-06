@@ -31,7 +31,7 @@ function createBoxes() {
 refs.dataDestroy.addEventListener('click', destroyBoxes)
 
 function destroyBoxes() {
-  for (let i = 0; i < amount; i += 1) {
-    refs.boxes.firstChild.remove()
-  }
+  
+  refs.boxes.replaceChildren();
+  
 }

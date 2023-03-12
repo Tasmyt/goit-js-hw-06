@@ -14,26 +14,9 @@ const images = [
 ];
 
 
-// const imgRef = ({url, alt}) => {
-//   const liRef = document.createElement(`li`);
-//   liRef.classList.add(`img__box`);
-//   const imageRef = document.createElement(`img`);
-//   imageRef.src = url;
-//   imageRef.textContent = alt;
-//   imageRef.classList.add(`image`);
-
-//   liRef.append(imageRef);
-//   return liRef;
-// }
-// const gallery = images.map(imgRef);
-
-
-// const galleryRef = document.querySelector(`.gallery`);
-// galleryRef.append(...gallery);
-
 
 const imgRef = ({url, alt}) => {
-  const liRef = `<li class="img__box"> <img src= ${url} alt= ${alt} class="image"></li>`;
+  const liRef = `<li class="img__box"> <img src= ${url} alt = '${alt}' class="image"></li>`;
   return liRef;
 }
 const gallery = images.map(imgRef);

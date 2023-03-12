@@ -12,7 +12,8 @@ function onFormSubmit(event) {
         email, password,
     };
 
-    if (Object.values(formData).includes('')) { alert('Не всі поля заповнені') };
-    console.log(formData);
-    form.reset();
+    if (Object.values(formData).includes('')) { alert('Не всі поля заповнені') } else {
+        console.log(formData);
+        form.reset();
+    }
 }
